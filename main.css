@@ -1,0 +1,231 @@
+/*common elements*/
+body {
+    font-size: 68%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    Background: Darkgrey;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+h1 {
+    color: lightgray;
+    font-size: 3em;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+h2 {
+    color: grey;
+    font-size: 1.7em;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: black;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 3.0em;
+}
+
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+
+a:hover {
+    color: #333;
+}
+
+a, a:visited {
+    color: grey;
+}
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+div.clear{
+    clear: both;
+    font-size: 1%;
+}
+
+/*header*/
+header {
+    padding: 2.5em 0 0.5em;
+    margin: 0 0 2.0em;
+    background: grey center 0px;
+}
+header h2 {
+    font-weight: 300;
+    font-size: 3.8em;
+    color: darkgrey;
+    margin: -0.4em 0 0 1.0em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+/*Nav Bars*/
+nav {
+    color: Black;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0.5em;
+    margin: 1.0em 0 ;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: darkgrey;
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color: white;
+    background-color: rgba(252,251,243,0.175)
+}
+nav#utilityMenu {
+    float: right;
+    margin: -1.5em 0 0 0;
+    padding: 0.35em;
+    background-color: grey;
+    height: 1.3em;
+}
+nav#utilitymenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: right;
+}
+nav#utilityMenu ul li.acctnav a, nav#utilityMenu ul li.acctNav a:visited {
+    color: Darkgrey;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.3em;
+    padding: 0.5em;
+    margin: -0.4em 0 0 0;
+    font-size: 0.8em;
+}
+nav#utilityMenu ul li.acctnav a.active {
+    background-color:lightgrey;
+}
+nav#utilityMenu u li.acctNav a:hover {
+    background-color: darkgrey;
+    color: lightgrey
+}
+nav#utilityMenu li a, nav#utilityMenu li a:visited { Padding: 0;}
+nav#utilityMenu li a:hover {background-color: transparent}
+nav#utilityMenu ul li input#search {
+    vertical-align: right;
+    margin: 0 0 0 1.0em;
+}
+nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before {
+    content: "|";
+    color: #FCFBE6;
+}
+/*Sidebar Section*/
+section#sidebar {
+    width: 300px;
+    float: right;
+    position: relative;
+    display: block;
+    background-color: grey;
+    margin: 3em 0 3.0em 1.5em;
+    padding: 1.7em 3em 2.5em 1.7em;
+    border-left: black solid solid 5px;
+    border: black solid 1px;
+    border-radius: 0.6em
+}
+/*Main Section*/
+section #main {
+    /*background-color: #FCFBE6;*/
+    background-color: darkgrey;
+    margin: 0 0 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px lightgrey;/*offset-x | offset-y | blur-radius | color */
+}
+section div.Shoppanel{
+    float: left;
+    position: relative;
+    width: 275px;
+    margin: 0 0.5em 2.0em 0.5em;
+    padding: 0.5em;
+    background-color: lightgrey;
+    border: black solid 1px;
+    border-radius: 0.6em
+}
+section div.Shoppanel img.item {
+    width: 100%;
+}
+/*Footer*/
+footer {
+    background-color: transparent;
+    height: 25px;
+    font-size: 1.2em;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+footer ul#menufooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: #333;
+    text-decoration: none;
+}
+footer a:hover {
+    color: dark black;
+    text-decoration: underline;
+}
+button {
+    color: black;
+    background-color: white;
+    display: inline-block;
+    margin: 0 0.75em 0 0;
+    padding: 0.2em 0.5em;
+    border: 1px solid Black;
+    text-transform: uppercase;
+}
+button:hover {
+    background-color: white;
+    border: 1px solid black;
+}
